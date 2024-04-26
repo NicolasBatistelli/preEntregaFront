@@ -517,7 +517,7 @@ li:hover::after {
 
         /*seccion de registrarse.html*/
         .seccionRegistrarse {
-            background-color: rgb(42, 42, 42);
+            background-color: white;
             width: 30%;
             margin: 0 auto;
             border-radius: 5px;
@@ -533,6 +533,7 @@ li:hover::after {
                 font-size: 2.5rem;
                 font-weight: 700;
                 margin-bottom: 20px;
+                color: #181419;
             }
 
             /*seleccionar todos los input menos el checkbox*/
@@ -559,6 +560,7 @@ li:hover::after {
                     display: flex;
                     align-items: center;
                     margin-bottom: 20px;
+                    color: #181419;
 
                     .textoCheck {
                         margin-left: 10px;
