@@ -173,7 +173,7 @@ li:hover::after {
 
 
 
-
+    
     .peliculasTendencia {
         width: 80%;
         margin: 0 auto;
@@ -238,23 +238,20 @@ li:hover::after {
 
                     }
 
-                    &:hover h4 {
-                        opacity: 1;
-
-                    }
-
-                    &:hover::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
+                    &:hover .tituloPelicula {
                         width: 100%;
                         height: 100%;
-                        border-radius: 10px;
-                        background-color: #9f3648;
-                        /* Color rojo transparente */
-                        z-index: 1;
-                        /* Para asegurarse de que esté sobre la imagen */
+                        backdrop-filter: blur(20px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    &:hover h4 {
+                        width: 100%;
+                        padding: 0.5rem;
+                        opacity: 1;
+
                     }
                 }
             }
@@ -379,12 +376,6 @@ li:hover::after {
                         }
 
                     }
-                }
-
-                &:hover {
-                    box-shadow: initial;
-                    transform: scale(0.9);
-
                 }
 
             }
@@ -554,15 +545,19 @@ li:hover::after {
                     outline: none;
                     color: white;
                 }
-                .error input:not(.check,.boton),.error select{
+
+                .error input:not(.check, .boton),
+                .error select {
                     border: 1px solid #ff0000;
                 }
-                .error-text{
+
+                .error-text {
                     color: #ff0000;
                     font-size: 0.8rem;
-                    margin-top:0px;
+                    margin-top: 0px;
                     margin-bottom: 10px;
                 }
+
                 .terminos {
                     font-size: 0.8rem;
                     display: flex;
